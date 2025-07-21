@@ -1,0 +1,18 @@
+
+CREATE TABLE TestTable (
+    id INTEGER NOT NULL,
+    name TEXT NOT NULL,
+    note TEXT,
+    date TEXT,
+    time TEXT
+);
+
+insertTestTable:
+INSERT INTO TestTable(id, name, note, date, time)
+VALUES(?, ?, ?, ?, ?);
+
+removeAllTestTable:
+DELETE FROM TestTable;
+
+selectAllTestTableInfo:
+SELECT TestTable.* FROM TestTable;

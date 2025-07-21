@@ -1,0 +1,1 @@
+ALTER TABLE TestTable ADD COLUMN time TEXT;
