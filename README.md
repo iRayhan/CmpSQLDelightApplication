@@ -1,14 +1,29 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# 📱 Compose Multiplatform SQLDelight App
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+A **Kotlin Multiplatform** project using **JetBrains Compose Multiplatform** for UI and **SQLDelight** for local database management. This project targets both **Android** and **iOS**, using **JVM 21** and built with **Android Studio Narwhal**.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+---
 
+## 🔧 Tech Stack
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…# CmpSQLDelightApplication
+- [JetBrains Compose Multiplatform](https://www.jetbrains.com/lp/compose-multiplatform/)
+- [Android Studio Narwhal](https://developer.android.com/studio/preview)
+- [JVM 21](https://openjdk.org/projects/jdk/21/)
+
+## 🚀 Platforms Supported
+
+- ✅ Android
+- ✅ iOS (Device + Simulator)
+- ⏳ Desktop (optional, can be added)
+
+## 🗃️ SQLDelight Setup
+
+- SQLDelight database is defined in `shared/src/commonMain/sqldelight`.
+- Use `.sq` files to define queries.
+- SQLDelight automatically generates Kotlin APIs for DB access.
+- Include data migration.
+
+📌 Notes
+Uses SQLDelight multiplatform drivers (ios, android).
+
+Compatible with JVM 21 (ensure proper toolchain is set).
