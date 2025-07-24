@@ -25,5 +25,3 @@ A **Kotlin Multiplatform** project using **JetBrains Compose Multiplatform** for
 
 📌 Notes
 Uses SQLDelight multiplatform drivers (ios, android).
-
-Compatible with JVM 21 (ensure proper toolchain is set).
